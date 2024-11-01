@@ -5,7 +5,8 @@ import { useContext, useEffect } from "react";
 import Loader from "../../components/loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../../redux/CartSlice";
-import MyContext from "../../context/myContext";
+import MyContext from "../../context/MyContext";
+
 
 
 
