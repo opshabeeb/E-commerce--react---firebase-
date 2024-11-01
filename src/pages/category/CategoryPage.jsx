@@ -5,7 +5,7 @@ import MyContext from '../../context/MyContext';
 import { Loader } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
-import { addToCart,deleteFromCart } from '../../redux/cartSlice';
+import { addToCart,deleteFromCart } from '../../redux/CartSlice';
 
 const CategoryPage = () => {
     const {categoryName}=useParams();

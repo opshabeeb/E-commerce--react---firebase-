@@ -1,15 +1,16 @@
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router";
-import myContext from "../../context/myContext";
+
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { addToCart, deleteFromCart } from "../../redux/CartSlice";
+import MyContext from "../../context/MyContext";
 
 
 const HomePageProductCard = () => {
     const navigate = useNavigate();
 
-    const context = useContext(myContext);
+    const context = useContext(MyContext);
     const { getAllProduct } = context;
 
     const cartItems = useSelector((state) => state.cart)|| [];
